@@ -1,0 +1,53 @@
+.custom-header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #375857; /* Personaliza el color */
+    padding: 0.5rem 1rem;
+}
+
+.custom-header .navbar-brand {
+  color: #fff;
+  font-size: 1.80rem;
+  text-decoration: none;
+}
+
+
+.custom-header .nav-item {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+
+.custom-header .nav-link:hover {
+   color: #101919;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 30px;
+}
+  
+.nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+    
+}
+
+/* Cambios en la dirección y tamaño de la navbar en dispositivos móviles */
+@media (max-width: 768px) {
+  .custom-header .navbar {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}

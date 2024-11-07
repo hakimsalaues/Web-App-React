@@ -1,0 +1,161 @@
+/* App.css */
+
+/* Importación de las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Madimi+One&display=swap');
+
+body {
+  font-family: 'Delius Unicase', 'Madimi One', sans-serif;
+}
+
+/* Estilos generales */
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 4em;
+}
+
+.item-list-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-message {
+  color: #E6E6DD; 
+  text-align: center; 
+  font-size: 25px; 
+}
+
+.cart-widget {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #004D3E;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s;
+}
+
+.contador {
+  color: white;
+  font-size: 50px;
+}
+
+.carrito {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.cart-widget:hover {
+  background-color: #036065;
+  transform: scale(1.1);
+}
+
+.item-count {
+  margin-left: 15px; 
+  font-weight: bold; 
+  color: #6DA4A3; 
+}
+
+/* Media Queries */
+
+/* Pequeños dispositivos (teléfonos en vertical, menor a 600px) */
+@media (max-width: 600px) {
+  .logo {
+    height: 3em;
+  }
+
+  .welcome-message {
+    font-size: 20px;
+  }
+
+  .cart-widget {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .contador {
+    font-size: 40px;
+  }
+
+  .item-list-container {
+    padding: 10px;
+  }
+}
+
+/* Tablets (entre 600px y 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .logo {
+    height: 3.5em;
+  }
+
+  .welcome-message {
+    font-size: 22px;
+  }
+
+  .cart-widget {
+    width: 55px;
+    height: 55px;
+    font-size: 17px;
+  }
+
+  .contador {
+    font-size: 45px;
+  }
+
+  .item-list-container {
+    padding: 15px;
+  }
+}
+
+/* Pantallas de escritorio pequeñas (entre 900px y 1200px) */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .logo {
+    height: 3.8em;
+  }
+
+  .welcome-message {
+    font-size: 24px;
+  }
+
+  .cart-widget {
+    width: 58px;
+    height: 58px;
+    font-size: 18px;
+  }
+
+  .contador {
+    font-size: 48px;
+  }
+}
+
+/* Pantallas de escritorio grandes (mayor a 1200px) */
+@media (min-width: 1200px) {
+  .logo {
+    height: 4em;
+  }
+
+  .welcome-message {
+    font-size: 25px;
+  }
+
+  .cart-widget {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .contador {
+    font-size: 50px;
+  }
+}

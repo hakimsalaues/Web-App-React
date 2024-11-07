@@ -1,0 +1,172 @@
+.product-page {
+    text-align: center;
+    color: #333;
+    background: url('/public/images/proback.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 100, 0, 0.5);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+.producto-item {
+  width: 250px;
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+.producto-item img {
+    max-width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px;
+  }
+.price {
+    color:#FFFFFF;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+h2 {
+    font-size: 19px;
+    margin: 10px 0;
+    color: #FFFFFF;
+  }
+  
+.quantity-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:auto;
+    color: #FFBF75;
+  }
+  
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    color: #FFBF75;
+  }
+  
+span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+.totals {
+    margin-top: auto;
+  }
+
+.cart-widget {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    background-color: #004D3E; 
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s;
+    z-index: 1000;
+  }
+
+
+.product-page {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+/* Asegurarse de que el contenido esté por encima del fondo */
+.contenedor, header, .totals {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Estilos para el modal */
+.product-image-large {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.video-container {
+  margin-top: 15px;
+  max-width: 100%;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 500px;
+  width: 100%;
+  transform: scale(0.9);
+  animation: scaleUp 0.3s forwards;
+}
+
+
+
+.details-button {
+  margin-top: auto; /* Empuja el botón hacia abajo */
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%; /* Asegura que el botón tenga el mismo ancho que el contenedor */
+  max-width: 200px; /* Limita el ancho para que no sobresalga */
+}
+.details-button:hover {
+  background-color: #555; /* Efecto al pasar el ratón */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  to {
+    transform: scale(1);
+  }
+}
+
