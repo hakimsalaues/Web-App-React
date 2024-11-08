@@ -6,7 +6,7 @@ import { saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from '../
 const ProductPage = ({ addToCart }) => {
   const products = [
     { id: 1, name: 'Guppy', price: 10, image: 'ad1.jpg', description: 'El Guppy es un pequeño pez colorido ideal para acuarios de agua dulce. Es fácil de cuidar y muy resistente.', videoUrl: 'https://www.youtube.com/embed/VeaUipBA-Xo' },
-    { id: 2, name: 'Flower horn', price: 20, image: 'ad2.jpg', description: 'El Flower horn es un pez exótico conocido por su cabeza prominente y su carácter territorial.', videoUrl: 'https://www.youtube.com/embed/t83kcn5MzxM' },
+    { id: 2, name: 'Flower horn', price: 20, image: 'ad2.jpg', description: 'El Flower horn es un pez exótico conocido por su cabeza prominente y su carácter territorial.', videoUrl: 'https://www.youtube.com/embed/t83kcn5MzxM' },   
     { id: 3, name: 'Betas', price: 30, image: 'ad3.jpg', description: 'Los Betas son peces vibrantes y populares en acuarios domésticos. Tienen aletas largas y una gran variedad de colores.', videoUrl: 'https://www.youtube.com/embed/jO_f7ZnX4bI' },
     { id: 4, name: 'Gold fish', price: 25, image: 'e1.jpg', description: 'El clásico Gold Fish es un pez ideal para acuarios o estanques. Es muy resistente y fácil de cuidar.', videoUrl: 'https://www.youtube.com/embed/nRz1_zphBYg' },
     { id: 5, name: 'Gold fish fantail', price: 40, image: 'e2.jpg', description: 'Este tipo de Gold Fish tiene una hermosa cola en forma de abanico que le da un aspecto elegante.', videoUrl: 'https://www.youtube.com/embed/DGCk8C9v6QM' },
