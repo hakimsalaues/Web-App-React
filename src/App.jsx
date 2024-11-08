@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer';
-import productpage from './paginas/ProductPage';
+import ProductPage from './paginas/productpage';
 import HomeLayout from './Layouts/HomeLayout';
 import BasicLayout from './Layouts/BasicLayout';
 import CartWidget from './components/CartWidget';
