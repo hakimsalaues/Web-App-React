@@ -16,7 +16,7 @@ const ProductPage = ({ addToCart }) => {
     { id: 9, name: 'Six line wrasse', price: 23, image: 'pm3.jpg', description: 'El Six Line Wrasse es un pez activo que ayuda a mantener el acuario libre de parásitos.', videoUrl: 'https://www.youtube.com/embed/rmt2lD5nP-E' },
     { id: 10, name: 'Angel Emperador', price: 50, image: 'angel_emperador.jpg', description: 'El Six Line Wrasse es un pez activo que ayuda a mantener el acuario libre de parásitos.', videoUrl: 'https://www.youtube.com/embed/PD-HXSl4aA8' },
     { id: 11, name: 'Pez Dory', price: 30, image: 'dory.jpg', description: 'El Six Line Wrasse es un pez activo que ayuda a mantener el acuario libre de parásitos.', videoUrl: 'https://www.youtube.com/embed/qRXrzdLB-9I' },
-    { id: 12, name: 'Pez payaso', price: 28, image: 'payaso.jpg', description: 'El Six Line Wrasse es un pez activo que ayuda a mantener el acuario libre de parásitos.', videoUrl: 'https://www.youtube.com/embed/C0MTtkQn3d0' },
+    { id: 12, name: 'Pez payaso', price: 28, image: 'payaso.jpg', description: 'El Six Line Wrasse es un pez activo que ayuda a mantener el acuario libre de parásitos.', videoUrl: 'https://www.youtube.com/embed/C0MTtkQn3d0'},
   ];
 
    // Paso 1: Cargar el carrito desde localStorage al montar el componente
