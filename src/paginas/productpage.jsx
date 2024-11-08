@@ -3,7 +3,7 @@ import './productpage.css';
 import BootstrapButton from '../components/BootstrapButton';
 import { saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from '../helper/LocalStorage'; // Importación del helper
 
-const ProductPage = ({ addToCart }) => {
+const productpage = ({ addToCart }) => {
   const products = [
     { id: 1, name: 'Guppy', price: 10, image: 'ad1.jpg', description: 'El Guppy es un pequeño pez colorido ideal para acuarios de agua dulce. Es fácil de cuidar y muy resistente.', videoUrl: 'https://www.youtube.com/embed/VeaUipBA-Xo' },
     { id: 2, name: 'Flower horn', price: 20, image: 'ad2.jpg', description: 'El Flower horn es un pez exótico conocido por su cabeza prominente y su carácter territorial.', videoUrl: 'https://www.youtube.com/embed/t83kcn5MzxM' },   
