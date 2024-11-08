@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; // Añadí useEffect para cargar datos al iniciar
-import './ProductPage.css';
+import './productpage.css';
 import BootstrapButton from '../components/BootstrapButton';
 import { saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from '../helper/LocalStorage'; // Importación del helper
 
