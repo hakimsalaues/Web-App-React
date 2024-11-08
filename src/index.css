@@ -66,3 +66,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+@media (max-width: 600px) {
+  body {
+    display: block; /* Cambia a block en móviles */
+    padding: 0;
+  }
+  h1 {
+    font-size: 2em; /* Ajusta para pantallas móviles */
+  }
+}
