@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { loadFromLocalStorage, clearLocalStorage } from '../helper/LocalStorage';
 
-const CartWidget = ({ cartCount, totalPrice, resetCartCount }) => { 
+const CartWidget = ({ cartCount, totalPrice, resetCartCount }) => {
+  const [savedCart, setSavedCart] = useState([]);
+
+  // Cargar carrito desde localStorage al iniciar el componente
+  useEffect(() => {
+    const loadedCart = loadFromLocalStorage();
+    setSavedCart(loadedCart); // Guardamos los productos en estado local
+  }, []);
+
   const handleCartClick = () => {
     if (cartCount > 0) {
       // Alerta de compra realizada
@@ -12,6 +21,7 @@ const CartWidget = ({ cartCount, totalPrice, resetCartCount }) => {
       }).then(() => {
         // Resetea el carrito después de confirmar la alerta
         resetCartCount();
+        clearLocalStorage(); // Limpiar el carrito de localStorage
       });
     } else {
       // Alerta de carrito vacío

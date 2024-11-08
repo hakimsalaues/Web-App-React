@@ -75,15 +75,15 @@ span {
     top: 20px; 
     right: 20px; 
     background-color: #004D3E; 
-    padding: 10px;
-    border-radius: 40px;
+    padding: 8px;
+    border-radius: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 18px;
-    width: 60px;
-    height: 60px;
+    font-size: 10px;
+    width: 70px;
+    height: 70px;
     transition: transform 0.2s;
     z-index: 1000;
   }
